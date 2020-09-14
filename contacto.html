@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasimar - Repuestos para máquinas textiles</title>
+    <link rel="stylesheet" type="text/css" href="estilos\estilos.css" />
+  </head>
+  <body>
+    
+    <!--banner-->
+    <header class="banner">
+      <img class="logo" src="img\Pasimar SRL (1).png" />
+      <p class="slogan">Repuestos para tus máquinas textiles</p>
+      <p class="contact">ventaspasimar@gmail.com - Celular +54 11-6048-8539</p>
+    </header>
+    <!--banner-->
+
+    <!--barra de navegación-->
+    <nav>
+      <ul class="menu">
+        <li class="navigationMenu"><a href="index.html">Inicio</a></li>
+        <li class="navigationMenu"><a href="nosotros.html">Nosotros</a></li>
+        <li class="navigationMenu"><a href="productos.html">Productos</a>
+          <ul class="submenu">
+            <li class="navigationSubmenu">
+              <a href="repuestos.html">Repuestos</a>
+            </li>
+            <li class="navigationSubmenu">
+              <a href="lubricantes.html">Lubricantes</a>
+            </li>
+            <li class="navigationSubmenu">
+              <a href="accesorios.html">Accesorios</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigationMenu"><a href="contacto.html">Contacto</a></li>
+        <li class="navigationMenu"><a href="marcas.html">Marcas</a></li>
+      </ul>
+    </nav>
+    <!--barra de navegación-->
+
+    <!--Formulario de contacto-->
+    <div class="quotesContainer">  
+      <form class="form" method="POST" action="#">
+        <h1 class="quotesTitle">Cotizaciones</h1>
+        <h2>Dejanos tu pedido para cotizar</h2>
+        
+        <input type="text" name="nombre_completo" required><br>
+        <label for="nombre_completo">Nombre y Apellido</label>
+        <br><br>
+          
+        <input type="text" name="mail" required><br>
+        <label for="mail">Email</label><br><br>
+        
+        <select name="elegir" required>
+          <option value="Seleccionar">Seleccionar</option>
+          <option value="Empresa">Empresa</option>
+          <option value="Particular">Particular</option>
+        </select><br><br>
+          
+        <textarea name="mensaje" required></textarea><br>
+        <label for="mensaje">¿En qué te podemos ayudar?</label><br><br>
+
+        <label for="aceptar_terminos">Acepta términos y condiciones</label>
+        <input class="check" type="checkbox" name="aceptar_terminos" value="1" required></input><br><br>
+                  
+        <input type="reset" value="Enviar"></input>
+      </form>
+    </div>
+    <!--Formulario de contacto-->
+
+    <hr class="line"></hr>
+
+    <!--pie de página-->
+    <footer>
+      <p>ventaspasimar@gmail.com - Celular +54 11-6048-8539 | Pasimar srl - Todos los derechos reservados</p>
+    </footer>
+    <!--pie de página-->
+
+  </body>
+</html>

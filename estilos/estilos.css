@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+body {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1em;
+  line-height: 1.4em;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*banner*/
+.banner {
+  background-color: #000;
+  color: rgb(223, 217, 217);
+  width: 100%;
+  height: 9em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 11em;
+  height: 5em;
+}
+
+.slogan {
+  letter-spacing: 0.2em;
+}
+
+.contact {
+  letter-spacing: 0.2em;
+}
+/*banner*/
+
+/*barra de navegación*/
+nav a {
+  height: 2.7em;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: #fff;
+  width: 8em;
+}
+
+nav a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgb(75, 75, 75);
+}
+
+.submenu {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.navigationMenu {
+  list-style: none;
+  position: relative;
+}
+
+.navigationSubmenu {
+  list-style: none;
+  display: none;
+}
+
+nav li:hover .submenu > li {
+  display: block;
+  top: 0em;
+  background-color: rgb(75, 75, 75);
+  transition: 0.7s;
+}
+/*barra de navegación*/
+
+/*presentación index*/
+.presentation {
+  height: 18em;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 1.5em;
+}
+
+.subtitle {
+  font-size: 1.5em;
+}
+
+.expertise {
+  font-family: "Old Standard TT", serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 3em;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  padding: 1em 2em;
+}
+
+.button:hover {
+  background-color: rgb(75, 75, 75);
+  transition: 0.5s;
+}
+
+.sectionContainer {
+  height: 25em;
+  background-image: url(../img/1432848-fondo-web2.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.title2 {
+  font-size: 7em;
+  line-height: 0.8em;
+  padding: 0.6em 0 0.2em 0.5em;
+  margin: 0;
+}
+
+.subtitle2 {
+  font-size: 1.3em;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  margin-left: 1.2em;
+}
+/*presentación index*/
+
+.line {
+  height: 0.7em;
+  background-color: rgb(75, 75, 75);
+  margin: 0;
+  width: 100%;
+  border: 0;
+}
+
+/*productos index*/
+.products {
+  height: 28em;
+}
+
+.title3 {
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+  margin: 0;
+}
+
+.quote {
+  font-family: "Old Standard TT", serif;
+  font-size: 0.7em;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/repuestos\ 3.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 13em;
+  border-radius: 0.3em;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/pexels-pixabay-159298.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 13em;
+  border-radius: 0.3em;
+}
+
+.box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/accesorios\ 3.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 13em;
+  border-radius: 0.3em;
+}
+
+.product:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+  border-radius: 0.3em;
+  transition: 0.5s;
+}
+
+.product {
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 3em 3.8em 3em 3.8em;
+}
+/*productos index*/
+
+/*sección nosotros*/
+.usContainer {
+  background-image: url(../img/pexels-photo-821735.jpeg);
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+}
+
+.us-title {
+  font-size: 8em;
+  line-height: 0.5em;
+  margin: 0;
+  padding-top: 0.8em;
+  padding-right: 0.3em;
+}
+
+.us-text {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding-top: 1em;
+  padding-right: 2.8em;
+}
+
+.us-logo {
+  width: 100%;
+  height: 100vh;
+}
+
+.social-media {
+  width: 3em;
+  height: 3em;
+}
+
+.wa {
+  margin-right: 11.5em;
+}
+/*sección nosotros*/
+
+/*sección productos*/
+.productsContainer {
+  height: 28.1em;
+  width: 100%;
+  display: flex;
+}
+
+.productsContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.productsContainer img {
+  width: 100%;
+}
+
+.productsContainer a {
+  line-height: 0;
+}
+
+.productsContainer img:hover {
+  opacity: 0.8;
+}
+
+.rep {
+  font-size: 4em;
+  margin: 0;
+  margin-right: 0.7em;
+}
+
+.maquinas {
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  margin-left: 1em;
+}
+
+.rightP {
+  font-size: 1.2em;
+  font-family: "Old Standard TT", serif;
+  width: 60%;
+  margin-top: 0em;
+  text-align: center;
+}
+
+.lubricantes {
+  font-size: 4em;
+  margin: 0;
+}
+
+.leftP {
+  font-size: 1.2em;
+  font-family: "Old Standard TT", serif;
+  width: 60%;
+  text-align: center;
+}
+
+.accesorios {
+  font-size: 4em;
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+/*sección productos*/
+
+/*sección contacto*/
+.quotesContainer {
+  width: 100%;
+  height: 39em;
+  background-image: url(../img/pexels-marc-mueller-380769.jpg);
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.form {
+  width: 40%;
+  height: 85%;
+  background-color: #fff;
+  opacity: 0.8;
+  text-align: center;
+  margin: auto;
+  padding-top: 3.5em;
+}
+
+.quotesTitle {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+input {
+  border: 0.2em solid black;
+  width: 60%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+.check {
+  width: 5%;
+}
+
+textarea {
+  border: 0.3em solid black;
+  resize: none;
+  width: 60%;
+  height: 20%;
+}
+
+select {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1em;
+}
+/*sección contacto*/
+
+/*sección marcas*/
+.trademarksTitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.trademarks1 {
+  height: 1em;
+  margin-top: 1.3em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-bottom: 0em;
+  display: inline-block;
+  border: 0.1em solid rgb(75, 64, 226);
+}
+
+.trademarks2 {
+  background-color: rgb(75, 64, 226);
+  display: inline-block;
+  padding: 0.6em 0.3em 0.3em;
+  height: 1em;
+  margin: 0;
+}
+
+.colorWhite {
+  color: rgb(207, 205, 205);
+  letter-spacing: 0.2em;
+}
+
+.trademarksTable {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.cell {
+  height: 30%;
+  width: 100%;
+}
+
+.cellWidth {
+  width: 25%;
+}
+
+table tr td img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+.textVideo {
+  font-family: "Candal", sans-serif;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.trademarksVideo {
+  width: 40em;
+  height: 20em;
+  position: relative;
+}
+/*sección marcas*/
+
+/*pie de página*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+}
+/*pie de página*/
