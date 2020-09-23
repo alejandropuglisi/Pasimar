@@ -10,45 +10,288 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: 1em;
   line-height: 1.4em;
-  background-color: #fff;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-header {
-  width: 100%;
+/*Apertura Index*/
+.indexContainer {
+  background-image: url(../img/repuestos\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 6em 18em 14em 15em 6em;
+  grid-template-areas:
+    "banner banner"
+    "presentation nav"
+    "offer offer"
+    "products products"
+    "footer footer";
+  justify-items: center;
+  justify-content: center;
 }
 
 /*banner*/
 .banner {
   background-color: #000;
-  color: rgb(223, 217, 217);
-  width: 100%;
+  color: rgb(255, 255, 255);
+  grid-area: banner;
+  display: grid;
   height: 6em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
+}
+
+.presentation {
+  grid-area: presentation;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.offer {
+  grid-area: offer;
+}
+
+.products {
+  grid-area: products;
+}
+
+footer {
+  grid-area: footer;
 }
 
 .logo {
-  width: 11em;
-  height: 5em;
+  width: 9em;
+  height: 3.5em;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 .slogan {
-  letter-spacing: 0.2em;
-}
-
-.contact {
-  letter-spacing: 0.2em;
+  color: rgb(218, 213, 213);
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.1em;
 }
 /*banner*/
 
-/*barra de navegación*/
+/*barra de navegación index*/
+nav {
+  align-self: center;
+  height: 50%;
+  background-color: rgba(238, 180, 34, 0.4);
+  width: 80%;
+  margin: auto;
+  border-radius: 0.5em;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+    "inicio nosotros"
+    "productos marcas"
+    "contacto contacto";
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.ini {
+  grid-area: inicio;
+}
+
+.nos {
+  grid-area: nosotros;
+}
+
+.pro {
+  grid-area: productos;
+}
+
+.mar {
+  grid-area: marcas;
+}
+
+.con {
+  grid-area: contacto;
+}
+
 nav a {
+  padding: 0.2em 0.7em 0.2em 0.7em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  color: #000;
+}
+
+nav a:hover {
+  background-color: black;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navigationMenu {
+  list-style: none;
+}
+/*barra de navegación index*/
+
+/*presentación*/
+.presentation {
+  text-align: center;
+  grid-area: presentation;
+  margin-top: 1em;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 0.8em;
+  color: rgb(233, 222, 222);
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: rgb(238, 180, 34);
+  letter-spacing: 0.1em;
+}
+
+.expertise {
+  font-family: "Old Standard TT", serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 3em;
+  color: rgb(233, 222, 222);
+}
+
+.buttonIndex {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(75, 75, 75);
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-bottom: 4em;
+  border-radius: 2em;
+}
+
+.buttonIndex:hover {
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.offer {
+  background-color: rgba(245, 239, 239, 0.4);
+  height: 10em;
+  width: 100%;
+  align-self: center;
+}
+
+.title2 {
+  font-size: 5em;
+  text-align: center;
+  color: #000;
+  padding: 0;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+.subtitle2 {
+  font-size: 1.5em;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.8em;
+}
+/*presentación*/
+
+/*productos*/
+.products {
+  grid-area: products;
+  width: 100%;
+  color: #000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1,
+.box2,
+.box3 {
+  background-size: cover;
+  border-radius: 0.3em;
+  height: 10em;
+  text-align: center;
+  margin-right: 0.4em;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.box1 {
+  background-image: url(../img/repuestos\ 3.jpg);
+}
+
+.box2 {
+  background-image: url(../img/pexels-pixabay-159298.jpg);
+}
+
+.box3 {
+  background-image: url(../img/accesorios\ 3.jpg);
+}
+
+.product:hover {
+  background-color: rgba(238, 180, 34, 0.4);
+  border-radius: 0.3em;
+  transition: 0.3s;
+}
+
+.product {
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  padding: 1.8em 3.8em 1.8em 3.8em;
+}
+/*productos*/
+/* Cierre Index*/
+
+/*barra de navegación 2*/
+.nav2 {
+  margin: 0;
+  width: 100%;
+}
+
+.nav2 a {
   height: 2.7em;
   margin: 0;
   padding: 0;
@@ -59,14 +302,15 @@ nav a {
   font-size: 1em;
   color: #fff;
   width: 8em;
+  letter-spacing: 0.1em;
 }
 
-nav a:hover {
+.nav2 a:hover {
   background-color: black;
   transition: 0.5s;
 }
 
-.menu {
+.menu2 {
   margin: 0;
   padding: 0;
   display: flex;
@@ -83,7 +327,7 @@ nav a:hover {
   width: 100%;
 }
 
-.navigationMenu {
+.navigationMenu2 {
   list-style: none;
   position: relative;
 }
@@ -93,187 +337,13 @@ nav a:hover {
   display: none;
 }
 
-nav li:hover .submenu > li {
+.nav2 li:hover .submenu > li {
   display: block;
   top: 0em;
   background-color: rgb(75, 75, 75);
   transition: 0.7s;
 }
-/*barra de navegación*/
-
-/*presentación index*/
-.grid {
-  width: 100%;
-  height: 58em;
-  display: grid;
-  grid-template-columns: 30% 30% 40%;
-  grid-template-rows: 21em 20em 21em;
-  grid-template-areas:
-    "presentation presentation presentation"
-    "offer offer products"
-    "offer offer products";
-}
-
-.presentation {
-  text-align: center;
-  grid-area: presentation;
-}
-
-.title {
-  font-size: 2.8em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 1.5em;
-}
-
-.subtitle {
-  font-size: 1.5em;
-}
-
-.expertise {
-  font-family: "Old Standard TT", serif;
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 3em;
-}
-
-.button {
-  text-decoration: none;
-  color: #fff;
-  background-color: black;
-  letter-spacing: 0.2em;
-  font-size: 1em;
-  padding: 1em 2em;
-  margin-bottom: 4em;
-}
-
-.button:hover {
-  background-color: rgb(75, 75, 75);
-  transition: 0.3s;
-}
-
-.offer {
-  background-image: url(../img/1432848-fondo-web2.jpg);
-  background-size: cover;
-  background-position: right;
-  background-repeat: repeat;
-  grid-area: offer;
-  justify-self: center;
-}
-
-.title2 {
-  font-size: 7em;
-  line-height: 0.8em;
-  margin-top: 1.5em;
-  margin-bottom: 0;
-  padding-bottom: 0.2em;
-  padding-top: 0.3em;
-  text-align: center;
-  color: #fff;
-  background-color: black;
-}
-
-.subtitle2 {
-  font-size: 2.5em;
-  font-family: "Old Standard TT", serif;
-  font-weight: 700;
-  background-color: black;
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 0.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 0.8em;
-}
-/*presentación index*/
-
-.line {
-  height: 0.7em;
-  background-color: rgb(75, 75, 75);
-  margin-top: 4em;
-  width: 100%;
-  border: 0;
-}
-
-/*productos index*/
-.products {
-  grid-area: products;
-  background-color: #000;
-  width: 100%;
-  color: #fff;
-  height: 100%;
-}
-
-.title3 {
-  font-size: 3em;
-  text-align: center;
-  letter-spacing: 0.3em;
-  padding-top: 1em;
-  padding-bottom: 0.4em;
-  margin: 0;
-}
-
-.quote {
-  font-family: "Old Standard TT", serif;
-  font-size: 0.5em;
-  font-weight: 200;
-  line-height: 1.3em;
-}
-
-.boxes {
-  width: 90%;
-  margin: auto;
-}
-
-.box1 {
-  background-image: url(../img/repuestos\ 3.jpg);
-  background-size: cover;
-  border-radius: 0.3em;
-  height: 10em;
-  margin-bottom: 0.6em;
-  text-align: center;
-  position: relative;
-}
-
-.box2 {
-  background-image: url(../img/pexels-pixabay-159298.jpg);
-  background-size: cover;
-  border-radius: 0.3em;
-  height: 10em;
-  margin-bottom: 0.6em;
-  text-align: center;
-  position: relative;
-}
-
-.box3 {
-  background-image: url(../img/accesorios\ 3.jpg);
-  background-size: cover;
-  border-radius: 0.3em;
-  height: 10em;
-  margin-bottom: 0.2em;
-  text-align: center;
-  position: relative;
-}
-
-.product:hover {
-  background-color: rgba(255, 0, 0, 0.4);
-  border-radius: 0.3em;
-  transition: 0.5s;
-}
-
-.product {
-  font-size: 1.5em;
-  color: #fff;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  padding: 2em 5em 2em 5em;
-  position: absolute;
-  top: 14%;
-  left: 11%;
-}
-/*productos index*/
+/*barra de navegación 2*/
 
 /*sección nosotros*/
 .usContainer {
@@ -287,22 +357,17 @@ nav li:hover .submenu > li {
 
 .us-title {
   font-size: 8em;
-  line-height: 0.5em;
+  line-height: 0.6em;
   margin: 0;
-  padding-top: 0.8em;
+  padding-top: 0.5em;
   padding-right: 0.3em;
 }
 
 .us-text {
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: 1.8em;
   padding-top: 1em;
   padding-right: 2.8em;
-}
-
-.us-logo {
-  width: 100%;
-  height: 100vh;
 }
 
 .social-media {
@@ -311,11 +376,65 @@ nav li:hover .submenu > li {
 }
 
 .wa {
-  margin-right: 11.5em;
+  margin-right: 10em;
+}
+
+.map {
+  background-image: url(../img/mapa\ mundial.jpg);
+  background-size: cover;
+  height: 47em;
+  position: relative;
+}
+
+.plane {
+  width: 8em;
+  height: 3em;
+  position: absolute;
+  top: 89%;
+  left: 25%;
+  animation-name: planeMovement;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+@keyframes planeMovement {
+  0% {
+    left: 25%;
+    top: 89%;
+  }
+  20% {
+    left: 44%;
+    top: 35%;
+  }
+  40% {
+    left: 55%;
+    top: 47%;
+  }
+  60% {
+    left: 68%;
+    top: 45%;
+  }
+  80% {
+    left: 15%;
+    top: 42%;
+  }
+  100% {
+    left: 25%;
+    top: 89%;
+  }
+}
+
+.whiteLogo {
+  width: 12em;
+  height: 5em;
+  position: absolute;
+  top: 89%;
+  left: 43%;
 }
 /*sección nosotros*/
 
-/*sección productos*/
+/*Apertura sección productos*/
 .productsContainer {
   height: 28.1em;
   width: 100%;
@@ -380,131 +499,381 @@ nav li:hover .submenu > li {
   margin: 0;
   margin-bottom: 0.3em;
 }
-/*sección productos*/
 
-/*sección contacto*/
-.quotesContainer {
+/*Sección repuestos*/
+.parts {
   width: 100%;
-  height: 39em;
-  background-image: url(../img/pexels-marc-mueller-380769.jpg);
-  background-size: contain;
-  margin: 0;
-  padding: 0;
-  font-size: 1.1em;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.form {
-  width: 40%;
-  height: 85%;
-  background-color: #fff;
-  opacity: 0.8;
+.cover {
+  width: 100%;
+  height: 10em;
+  background-image: url(../img/portada\ repuestos.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleParts {
+  font-size: 5em;
+  letter-spacing: 0.7em;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  width: 53.8%;
+  height: 46%;
+  line-height: 1;
+}
+
+.boxItem {
+  width: 22%;
+  padding: 0.5em 0.5em;
+}
+
+.item {
+  width: 100%;
+}
+/*Sección repuestos*/
+
+/*Sección lubricantes*/
+.coverOils {
+  width: 100%;
+  height: 10em;
+  background-image: url(../img/lubricantes.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleOils {
+  font-size: 5em;
+  letter-spacing: 0.7em;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  width: 65.6%;
+  height: 46%;
+  line-height: 1;
+}
+
+.oils {
+  font-family: "Old Standard TT", serif;
+  font-weight: 800;
+  font-size: 1.3em;
+  width: 80%;
+  margin-top: 2em;
+  line-height: 2em;
+  text-justify: distribute-all-lines;
+}
+
+.oilsSub,
+.oilsSub2 {
+  font-size: 2em;
+  border-bottom: 3px solid rgb(238, 180, 34);
+  border-right: 3px solid rgb(238, 180, 34);
+  border-left: 3px solid rgb(238, 180, 34);
+  border-radius: 0.4em;
+}
+
+.oilsSub {
+  width: 28%;
+}
+
+.oilsSub2 {
+  width: 54%;
+}
+
+.oils h3 {
+  background-color: #000;
+  color: rgb(238, 180, 34);
   text-align: center;
-  margin: auto;
-  padding-top: 3.5em;
 }
 
-.quotesTitle {
-  font-size: 3.5em;
+.imgOils {
+  width: 100%;
+  height: 26em;
+}
+
+.fas,
+.fa {
+  margin-right: 0.3em;
+  color: rgb(238, 180, 34);
+}
+
+.fa-thumbs-down:before {
+  content: "\f105";
+}
+/*Sección lubricantes*/
+
+/*Sección accesorios*/
+.coverAcc {
+  width: 100%;
+  height: 10em;
+  background-image: url(../img/portada\ accesorios.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleAcc {
+  font-size: 5em;
+  letter-spacing: 0.7em;
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 0;
+  width: 59.2%;
+  height: 46%;
+  line-height: 1;
+}
+/*Sección accesorios*/
+.data {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input {
-  border: 0.2em solid black;
-  width: 60%;
+.dataText {
+  background-color: rgb(87, 84, 84);
+  text-align: center;
+  color: #fff;
+}
+
+.dataText2 {
+  background-color: #000;
+  color: rgb(238, 180, 34);
+  text-align: center;
+}
+
+.buttonParts {
   font-family: "Bebas Neue", cursive;
-  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(87, 84, 84);
   letter-spacing: 0.1em;
-}
-
-.check {
-  width: 5%;
-}
-
-textarea {
-  border: 0.3em solid black;
-  resize: none;
-  width: 60%;
-  height: 20%;
-}
-
-select {
-  font-family: "Bebas Neue", cursive;
   font-size: 1em;
-}
-/*sección contacto*/
-
-/*sección marcas*/
-.trademarksTitle {
-  font-family: "Oswald", sans-serif;
-  font-size: 2.5em;
-  text-align: center;
+  padding: 1em 2em;
+  margin-top: 1.5em;
+  border-radius: 2em;
 }
 
-.trademarks1 {
-  height: 1em;
-  margin-top: 1.3em;
-  padding-top: 0.5em;
-  padding-right: 1em;
-  padding-left: 1em;
-  margin-bottom: 0em;
-  display: inline-block;
-  border: 0.1em solid rgb(7, 7, 7);
+.buttonParts:hover {
+  background-color: #000;
+  transition: 0.5s;
 }
 
-.trademarks2 {
-  background-color: rgb(75, 64, 226);
-  display: inline-block;
-  padding: 0.6em 0.3em 0.3em;
-  height: 1em;
-  margin: 0;
+.buttonParts2:hover {
+  color: rgb(238, 180, 34);
+  transition: 0.5s;
 }
 
-.colorWhite {
-  color: rgb(207, 205, 205);
-  letter-spacing: 0.2em;
+.fingerDown {
+  width: 5%;
+  height: 5%;
 }
+/*Cierre sección productos*/
 
+/*Sección marcas*/
 .trademarksTable {
   width: 100%;
   height: 100vh;
-  text-align: center;
-}
-
-.cell {
-  height: 30%;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
 }
 
 .cellWidth {
   width: 25%;
+  text-align: center;
 }
 
-table tr td img {
-  display: block;
-  width: 60%;
-  margin: auto;
-}
-
-.textVideo {
-  font-family: "Candal", sans-serif;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.videoWidth {
+  width: 50%;
+  text-align: center;
 }
 
 .trademarksVideo {
-  width: 40em;
-  height: 20em;
-  position: relative;
+  width: 75%;
 }
 /*sección marcas*/
 
+/*sección contacto*/
+.quotesContainer {
+  background-image: url(../img/pexels-marc-mueller-380769.jpg);
+  background-size: cover;
+  height: 50em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quotes {
+  font-family: "Bebas Neue", cursive;
+  color: gray;
+  font-size: 3.5em;
+  padding-top: 0.7em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+.quotesSub {
+  padding-bottom: 1.2em;
+  color: gray;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+form {
+  background: rgb(0, 0, 0);
+  width: 35%;
+  padding: 0.1em 0.1em;
+  border-radius: 0.7em;
+  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.8);
+}
+
+.form {
+  width: 100%;
+}
+
+.group {
+  position: relative;
+  margin: 1.6em 4.6em;
+}
+
+input,
+textarea {
+  font-family: "Old Standard TT", serif;
+  background: none;
+  color: gray;
+  font-size: 1em;
+  padding: 0.7em 0.7em 0.7em 0.4em;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(143, 141, 141);
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  color: rgb(170, 167, 167);
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  position: absolute;
+  top: -0.8em;
+  font-size: 1em;
+  color: rgb(170, 167, 167);
+}
+
+label {
+  position: absolute;
+  font-size: 1.1em;
+  color: rgb(168, 166, 166);
+  left: 0.1em;
+  top: 0.2em;
+  transition: 0.5s ease all;
+  letter-spacing: 0.2em;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 106%;
+}
+
+input:focus ~ .barra::before,
+textarea:focus ~ .barra::before {
+  width: 100%;
+}
+
+.barra::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  transition: 0.5s ease all;
+  left: 0%;
+}
+
+.buttonContact {
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #2c3e50#bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  display: block;
+  width: 7em;
+  height: 2.5em;
+  border: none;
+  color: #000;
+  border-radius: 4px;
+  font-size: 1.1em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 3.5em;
+  font-family: "Bebas Neue", cursive;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+
+.textContainer {
+  width: 40%;
+}
+
+.textContact {
+  font-size: 4em;
+  margin: 0;
+  line-height: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+}
+/*sección contacto*/
+
+.line {
+  height: 0.7em;
+  background-color: rgb(75, 75, 75);
+  width: 100%;
+  border: 0;
+  margin: 0;
+}
+
 /*pie de página*/
-footer {
+.footerIndex {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+}
+
+footer {
   height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
 }
 /*pie de página*/
