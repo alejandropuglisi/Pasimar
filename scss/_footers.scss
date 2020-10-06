@@ -1,0 +1,26 @@
+/*pie de página index*/
+.footerIndex {
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  text-align: center;
+  @include base-module;
+  @include flex;
+  
+  .footerIndex p {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+/*pie de pagina index*/
+  
+/*pie de página*/
+footer {
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+}
+/*pie de página*/

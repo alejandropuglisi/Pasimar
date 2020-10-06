@@ -1,0 +1,22 @@
+@mixin base-module {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+@mixin button-hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin sizes ($width, $height) {
+  height: $height;
+  width: $width;
+}

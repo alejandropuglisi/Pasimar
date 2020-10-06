@@ -1,0 +1,253 @@
+/*Index responsive*/
+/* Small devices (landscape phones, max 576px)*/
+@media (max-width: 400px) {
+  body {
+
+    .indexContainer {
+      grid-template-columns: 100%;
+      grid-template-rows: 6em 14em 7em 12em 13em 6em;
+      grid-template-areas:
+        "banner"
+        "presentation"
+        "nav"
+        "offer"
+        "products"
+        "footer";
+    
+      nav {
+        @include flex;
+        @include sizes (100%, 5em);
+        border-radius: 0;
+    
+        .menu {
+          @include flex;
+          @include sizes (100%, 2em);
+    
+          a {
+            font-size: 0.9em;
+            align-self: center;
+          }
+        }
+      }  
+
+      .presentation {
+        margin-top: 0;
+    
+        .title {
+          font-size: 1.4em;
+          line-height: 1em;
+        }
+
+        .expertise {
+          margin-bottom: 1.5em;
+        }
+
+        .buttonIndex {
+          font-size: 0.8em;
+          padding: 0.5em 1em;
+          margin-bottom: 2em;
+          border-radius: 1em;
+        }
+      }
+    
+      .offer {
+    
+        .title2 {
+          margin-top: 0.5em;
+          margin-bottom: 0.2em;
+          font-size: 3em;
+        }
+
+        .subtitle2 {
+          font-size: 1.2em;
+        }
+      }
+
+      .products {
+
+        .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0.3em;
+    
+          .box1-cover, .box2-cover, .box3-cover {
+            @include sizes (80%, 3.5em);
+            margin-bottom: 0.5em;
+            margin-right: 0;
+        
+            .product {
+              font-size: 0.8em;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .footerIndex {
+    
+        p {
+          margin: 0;
+          font-size: 0.7em;
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 401px) and (max-width: 576px) {
+  body {
+
+    .indexContainer {
+      grid-template-columns: 100%;
+      grid-template-rows: 6em 12em 7em 10em 16em 6em;
+      grid-template-areas:
+        "banner"
+        "presentation"
+        "nav"
+        "offer"
+        "products"
+        "footer";
+    
+      nav {
+        @include flex;
+        @include sizes (98%, 5em);
+    
+        .menu {
+          @include flex;
+          @include sizes (100%, 2em);
+    
+          a {
+            font-size: 0.9em;
+            align-self: center;
+          }
+        }
+      }  
+
+      .presentation {
+        margin-top: 0;
+    
+        .title {
+          font-size: 1.4em;
+          line-height: 1em;
+        }
+
+        .expertise {
+          margin-bottom: 1.5em;
+        }
+
+        .buttonIndex {
+          font-size: 0.8em;
+          padding: 0.5em 1em;
+          margin-bottom: 2em;
+          border-radius: 1em;
+        }
+      }
+    
+      .offer {
+        height: 8em;
+    
+        .title2 {
+          margin-top: 0.5em;
+          margin-bottom: 0.2em;
+          font-size: 3em;
+        }
+
+        .subtitle2 {
+          font-size: 1.2em;
+        }
+      }
+
+      .products {
+
+        .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0.3em;
+    
+          .box1-cover, .box2-cover, .box3-cover {
+            @include sizes (80%, 4.5em);
+            margin-bottom: 0.5em;
+            margin-right: 0;
+        
+            .product {
+              font-size: 0.8em;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .footerIndex {
+    
+        p {
+          margin: 0;
+          font-size: 0.7em;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+  
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+
+    .indexContainer {
+      grid-template-rows: 6em 15em 14em 12em 6em;
+    
+      .title {
+        font-size: 1.5em;
+      }
+    
+      .title2 {
+        font-size: 4em;
+      }
+    
+      .offer {
+        height: 10em;
+
+        .title2 {
+          font-size: 3em;
+        }
+      }
+    
+      .box1, .box2, .box3 {
+        height: 8em;
+    
+        .product {
+          font-size: 1em;
+        }
+      }
+    
+      .footerIndex p {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+  
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+
+    .indexContainer {
+      grid-template-rows: 6em 17em 14em 13em 7em;
+    
+      .offer {
+        height: 11em;
+      }
+    }
+  }
+}
+  
+@media (min-width: 993px) and (max-width: 1200px) {
+  body {
+
+    .indexContainer {
+      grid-template-rows: 6em 16em 14em 13em 7em;
+    }
+  }
+}
+/*Index responsive*/

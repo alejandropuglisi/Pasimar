@@ -1,0 +1,72 @@
+.titlePro {
+    font-size: 5em;
+    letter-spacing: 0.7em;
+    background-color: rgba(184, 177, 177, 0.7);
+    margin: 0;
+    line-height: 1;
+    @include sizes (54.1%, 55%);
+}
+  
+.productsContainer {
+  display: flex;
+  @include sizes (100%, 28.1em);
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+    a {
+      line-height: 0;
+  
+      img {
+        width: 100%;
+      }
+      
+      img:hover {
+        opacity: 0.8;
+      }
+    }
+  
+    .rep {
+      font-size: 4em;
+      margin: 0;
+      margin-right: 0.7em;
+    }
+    
+    .maquinas {
+      font-size: 2.5em;
+      margin-top: 0.5em;
+      margin-bottom: 0.3em;
+      margin-left: 1em;
+    }
+    
+    .rightP {
+      font-size: 1.2em;
+      font-family: "Old Standard TT", serif;
+      width: 60%;
+      margin-top: 0em;
+      text-align: center;
+    }
+  
+    .lubricantes {
+      font-size: 4em;
+      margin: 0;
+    }
+    
+    .leftP {
+      font-size: 1.2em;
+      font-family: "Old Standard TT", serif;
+      width: 60%;
+      text-align: center;
+    }
+  
+    .accesorios {
+      font-size: 4em;
+      margin: 0;
+      margin-bottom: 0.3em;
+    }
+  }
+}

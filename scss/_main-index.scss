@@ -1,0 +1,175 @@
+/*barra de navegación index*/
+nav {
+  background-color: $bc-gold;
+  border-radius: 0.5em;
+  margin: auto;
+  @include sizes (65%, 80%);
+    
+  .menu {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+      "inicio"
+      "nosotros"
+      "productos"
+      "marcas"
+      "contacto";
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    @include sizes (100%, 100%);
+
+    .ini {
+      grid-area: inicio;
+    }
+    
+    .nos {
+      grid-area: nosotros;
+    }
+    
+    .pro {
+      grid-area: productos;
+    }
+    
+    .mar {
+      grid-area: marcas;
+    }
+    
+    .con {
+      grid-area: contacto;
+    }
+  
+    .navigationMenu {
+      list-style: none;
+
+      a {
+        padding: 0.2em 0.7em 0.2em 0.7em;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2em;
+        color: #000;
+      }
+      
+      a:hover {
+        background-color: black;
+        color: #fff;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+/*barra de navegación index*/
+
+/*presentación*/
+.presentation {
+  text-align: center;
+  margin-top: 0.5em;
+  
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 0.8em;
+    color: rgb(233, 222, 222);
+  }
+
+  .expertise {
+    font-family: "Old Standard TT", serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    color: rgb(233, 222, 222);
+  }
+
+  .buttonIndex {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(75, 75, 75);
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-bottom: 4em;
+    border-radius: 2em;
+  }
+  
+  .buttonIndex:hover {
+    @include button-hover;
+  }
+}
+  
+.offer {
+  background-color: rgba(245, 239, 239, 0.4);
+  align-self: center;
+  @include sizes (100%, 10em);
+  
+  .title2 {
+    font-size: 5em;
+    text-align: center;
+    color: #000;
+    padding: 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+  }
+  
+  .subtitle2 {
+    font-size: 1.5em;
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.8em;
+  }
+}
+/*presentación*/
+  
+/*productos*/
+.products {
+  grid-area: products;
+  color: #000;
+  @include flex;
+  @include sizes (100%, 100%);
+  
+  .boxes {
+    width: 100%;
+    @include flex;
+
+    @each $fondo in box1, box2, box3 {
+      .#{$fondo}-cover {
+        background-image: url(../img/#{$fondo}.png);
+      }
+    }
+
+    .box1-cover, .box2-cover, .box3-cover {
+      background-size: cover;
+      border-radius: 0.3em;
+      text-align: center;
+      margin-right: 0.4em;
+      border: 2px solid white;
+      @include flex;
+      @include sizes (30%, 10em);
+
+      .product {
+        font-size: 1.5em;
+        color: #fff;
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        padding: 1.8em 3.8em 1.8em 3.8em;
+  
+        &:hover {
+          background-color: $bc-gold;
+          border-radius: 0.3em;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+/*productos*/
+/*Cierre Index*/

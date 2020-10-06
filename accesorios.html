@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pasimar - Repuestos para máquinas textiles</title>
-    <link rel="stylesheet" type="text/css" href="estilos\estilos.css" />
+    <title>Pasimar - Accesorios textiles</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css\styles.css" />
   </head>
 
   <body>
@@ -18,59 +24,145 @@
     <!--barra de navegación 2-->
     <nav class="nav2">
       <ul class="menu2">
-        <li class="navigationMenu2"><a href="index.html">Inicio</a></li>
-        <li class="navigationMenu2"><a href="nosotros.html">Nosotros</a></li>
+        <li class="navigationMenu2"><a class="links" href="index.html">Inicio</a></li>
+        <li class="navigationMenu2"><a class="links" href="nosotros.html">Nosotros</a></li>
         <li class="navigationMenu2">
-          <a href="productos.html">Productos</a>
+          <a class="links" href="productos.html">Productos</a>
           <ul class="submenu">
             <li class="navigationSubmenu">
-              <a href="repuestos.html">Repuestos</a>
+              <a class="links2" href="repuestos.html">Repuestos</a>
             </li>
             <li class="navigationSubmenu">
-              <a href="lubricantes.html">Lubricantes</a>
+              <a class="links2" href="lubricantes.html">Lubricantes</a>
             </li>
             <li class="navigationSubmenu">
-              <a href="accesorios.html">Accesorios</a>
+              <a class="links2" href="accesorios.html">Accesorios</a>
             </li>
           </ul>
         </li>
-        <li class="navigationMenu2"><a href="marcas.html">Marcas</a></li>
-        <li class="navigationMenu2"><a href="contacto.html">Contacto</a></li>
+        <li class="navigationMenu2"><a class="links" href="marcas.html">Marcas</a></li>
+        <li class="navigationMenu2"><a class="links" href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
     <!--barra de navegación 2-->
 
-    <!--tabla de accesorios-->
-    <main class="parts"> 
-      <div class="coverAcc"><p class="titleAcc">accesorios</p></div>
-      <div class="boxItem"><img class="item" src="img\acc1.jpg"></div>  
-      <div class="boxItem"><img class="item" src="img\acc2.jpg"></div> 
-      <div class="boxItem"><img class="item" src="img\acc12.jpg"></div> 
-      <div class="boxItem"><img class="item" src="img\acc4.jpg"></div> 
-      <div class="boxItem"><img class="item" src="img\acc5.png"></div>
-      <div class="boxItem"><img class="item" src="img\acc6.jpg"></div>
-      <div class="boxItem"><img class="item" src="img\acc7.jpg"></div>
-      <div class="boxItem"><img class="item" src="img\acc8.jpg"></div>
-      <div class="boxItem"><img class="item" src="img\acc9.jpg"></div>
-      <div class="boxItem"><img class="item" src="img\acc10.jpg"></div>
-      <div class="boxItem"><img class="item" src="img\acc11.png"></div>
-      <div class="boxItem"><img class="item" src="img\acc3.jpg"></div>
+    <div class="coverAcc"><h1 class="titleAcc">accesorios</h1></div>
+
+    <!--Carousel Bootstrap-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img\slider accesorios.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img\slider accesorios 3.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img\slider accesorios 2.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--Carousel Bootstrap-->
+
+    <main class="parts">
+      <!--tabla de accesorios-->
+      <div class="boxItem"><img class="item" src="img\acc1.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc2.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc12.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc4.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc6.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc7.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc8.jpg" /></div>
+      <div class="boxItem"><img class="item" src="img\acc10.jpg" /></div>
     </main>
     <!--tabla de accesorios-->
 
     <section class="data">
-      <p class="dataText">Las imágenes son a modo ilustrativo, ya que podemos conseguir cualquier tipo de producto, de cualquier marca del sector.<br>Sólo necesitamos el código para cotizártelo.</p>
-      <p class="dataText">Dejanos tus datos en este formulario y te asesoramos o comunicate vía Whatsapp</p>
-      <img class="fingerDown" src="img\dedo hacia abajo.png" alt="dedo hacia abajo">
-      <a class="buttonParts" href="contacto.html">Contacto</a>
+      <p class="dataText">
+        Las imágenes son a modo ilustrativo, ya que podemos conseguir cualquier
+        tipo de producto, de cualquier marca del sector.<br />Sólo necesitamos
+        el código para cotizártelo.
+      </p>
+      <p class="dataText">
+        Dejanos tus datos en este formulario y te asesoramos, o comunicate vía
+        Whatsapp
+      </p>
+      <img
+        class="fingerDown"
+        src="img\dedo hacia abajo.png"
+        alt="dedo hacia abajo"
+      />
+      <a id="buttonParts" href="contacto.html">Contacto</a>
     </section>
 
     <!--pie de página-->
     <footer>
       <p>
-        ventaspasimar@gmail.com | Cel +54 11-6048-8539 | Pasimar srl - Todos los derechos reservados
+        ventaspasimar@gmail.com | Cel +54 11-6048-8539 | Pasimar srl - Todos los
+        derechos reservados
       </p>
     </footer>
     <!--pie de página-->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS, Popper.js, and jQuery -->
   </body>
 </html>

@@ -1,0 +1,83 @@
+.usContainer {
+  background-image: url(../img/pexels-photo-821735.jpeg);
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  
+  .us-title {
+    font-size: 8em;
+    line-height: 0.6em;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-right: 0.3em;
+  }
+  
+  .us-text {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    padding-top: 1em;
+    padding-right: 2.8em;
+  }
+  
+  .social-media {
+    @include sizes (3em, 3em);
+  }
+  
+  .wa {
+    margin-right: 10em;
+  }
+}
+  
+.map {
+  background-image: url(../img/mapa-mundial.jpg);
+  background-size: cover;
+  height: 47em;
+  position: relative;
+  
+  .plane {
+    position: absolute;
+    top: 89%;
+    left: 25%;
+    animation-name: planeMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    @include sizes (8em, 3em);
+  }
+  
+  @keyframes planeMovement {
+    0% {
+      left: 25%;
+      top: 89%;
+    }
+    20% {
+      left: 44%;
+      top: 35%;
+    }
+    40% {
+      left: 55%;
+      top: 47%;
+    }
+    60% {
+      left: 68%;
+      top: 45%;
+    }
+    80% {
+      left: 15%;
+      top: 42%;
+    }
+    100% {
+      left: 25%;
+      top: 89%;
+    }
+  }
+  
+  .whiteLogo {
+    position: absolute;
+    top: 89%;
+    left: 43%;
+    @include sizes (12em, 5em);
+  }
+}

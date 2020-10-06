@@ -1,0 +1,52 @@
+body {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    @include sizes(100%, 100%);
+  
+    .indexContainer {
+        background-image: url(../img/box1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 6em 15em 15em 15em 6em;
+        grid-template-areas:
+            "banner banner"
+            "presentation nav"
+            "offer offer"
+            "products products"
+            "footer footer";
+        justify-items: center;
+        justify-content: center;
+    
+        .presentation {
+            grid-area: presentation;
+        }
+ 
+        .list-group {
+            grid-area: nav;
+        }
+        
+        .offer {
+            grid-area: offer;
+        }
+  
+        .products {
+            grid-area: products;
+        }
+        
+        footer {
+            grid-area: footer;
+        }
+    }
+}
+
+.line {
+    background-color: rgb(75, 75, 75);
+    border: 0;
+    margin: 0;
+    @include sizes(100%, 0.7em);
+}

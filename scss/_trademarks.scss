@@ -1,0 +1,19 @@
+.trademarksTable {
+  margin-top: 2em;
+  @include flex;
+  @include sizes (100%, 100vh);
+  
+  .cellWidth {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .videoWidth {
+    width: 50%;
+    text-align: center;
+  
+    .trademarksVideo {
+      width: 75%;
+    }
+  }
+}
