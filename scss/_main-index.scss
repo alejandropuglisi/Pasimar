@@ -3,43 +3,16 @@ nav {
   background-color: $bc-gold;
   border-radius: 0.5em;
   margin: auto;
-  @include sizes (65%, 80%);
+  @include sizes (40%, 30%);
     
   .menu {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas:
-      "inicio"
-      "nosotros"
-      "productos"
-      "marcas"
-      "contacto";
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
     @include sizes (100%, 100%);
-
-    .ini {
-      grid-area: inicio;
-    }
-    
-    .nos {
-      grid-area: nosotros;
-    }
-    
-    .pro {
-      grid-area: productos;
-    }
-    
-    .mar {
-      grid-area: marcas;
-    }
-    
-    .con {
-      grid-area: contacto;
-    }
   
     .navigationMenu {
       list-style: none;
@@ -64,39 +37,25 @@ nav {
 
 /*presentación*/
 .presentation {
-  text-align: center;
-  margin-top: 0.5em;
+  margin-top: 4em;
+  justify-content: center;
   
   .title {
-    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    font-size: 3.5em;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
-    line-height: 0.8em;
+    line-height: 1em;
     color: rgb(233, 222, 222);
+    width: 70%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  .expertise {
-    font-family: "Old Standard TT", serif;
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 3em;
-    color: rgb(233, 222, 222);
-  }
-
-  .buttonIndex {
-    text-decoration: none;
-    color: #fff;
-    background-color: rgb(75, 75, 75);
-    letter-spacing: 0.2em;
-    font-size: 1em;
-    padding: 1em 2em;
-    margin-bottom: 4em;
-    border-radius: 2em;
-  }
-  
-  .buttonIndex:hover {
-    @include button-hover;
+  .title1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.6em;
   }
 }
   
@@ -120,8 +79,10 @@ nav {
     font-weight: 700;
     color: #000;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-bottom: 0.5em;
+    padding-bottom: 0em;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 0.8em;

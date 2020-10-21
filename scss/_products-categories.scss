@@ -77,6 +77,10 @@
     .imgOils {
       @include sizes (100%, 26em);
     }
+
+    .fontSize {
+      font-size: 1.4em;
+    }
     
     .fas,
     .fa {
@@ -89,9 +93,11 @@
     }
 
     h3 {
+      font-size: 1em;
       background-color: #000;
       color: rgb(238, 180, 34);
       text-align: center;
+      text-transform: uppercase;
     }
   }
 }  
@@ -123,16 +129,19 @@
     background-color: rgb(87, 84, 84);
     text-align: center;
     color: #fff;
+    margin: 0;
   }
   
   .dataText2 {
     background-color: #000;
     color: rgb(238, 180, 34);
     text-align: center;
+    margin: 0;
   }
 
   .fingerDown {
     @include sizes (2.5em, 2.5em);
+    margin-top: 1em;
   }
   
   #buttonParts,

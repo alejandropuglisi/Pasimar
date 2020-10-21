@@ -50,9 +50,13 @@
         @include flex;
       }
 
-      &:hover {
-        @include button-hover
-      }
+        &:hover {
+          @include button-hover;
+
+          .submenu li {
+            display: block;
+          }
+        }
 
       .submenu {
         padding: 0;
@@ -64,12 +68,11 @@
         .navigationSubmenu {
           list-style: none;
           display: none;
+          background-color: rgb(75, 75, 75);
+          transition: 0.7s;
 
-          &:hover {
-            display: block;
-            top: 0em;
-            background-color: rgb(75, 75, 75);
-            transition: 0.7s;
+          a:hover {
+            @include button-hover;
           }
         }
       }
