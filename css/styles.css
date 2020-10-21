@@ -511,7 +511,10 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: #fff; }
   .footerIndex p {
     text-align: center;
     font-size: 1em;
