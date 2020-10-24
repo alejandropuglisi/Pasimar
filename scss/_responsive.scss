@@ -1,11 +1,9 @@
-/*Index responsive*/
-/* Small devices (landscape phones, max 576px)*/
+/*(max width 400px)*/
 @media (max-width: 400px) {
   body {
-
     .indexContainer {
       grid-template-columns: 100%;
-      grid-template-rows: 6em 14em 7em 12em 13em 6em;
+      grid-template-rows: 6em 6em 6em 12em 16em 6em;
       grid-template-areas:
         "banner"
         "presentation"
@@ -13,49 +11,45 @@
         "offer"
         "products"
         "footer";
-    
+
       nav {
         @include flex;
-        @include sizes (100%, 5em);
-        border-radius: 0;
-    
+        @include sizes(65%, 65%);
+        border-radius: 1em;
+
         .menu {
           @include flex;
-          @include sizes (100%, 2em);
-    
+          @include sizes(100%, 3em);
+
           a {
-            font-size: 0.9em;
+            font-size: 0.8em;
             align-self: center;
           }
         }
-      }  
+      }
 
       .presentation {
-        margin-top: 0;
-    
+        margin-top: 1.5em;
+
         .title {
-          font-size: 1.4em;
+          font-size: 1.2em;
           line-height: 1em;
-        }
 
-        .expertise {
-          margin-bottom: 1.5em;
-        }
-
-        .buttonIndex {
-          font-size: 0.8em;
-          padding: 0.5em 1em;
-          margin-bottom: 2em;
-          border-radius: 1em;
+          .title1 {
+            font-size: 1.3em;
+          }
         }
       }
-    
+
       .offer {
-    
+        height: 9em;
+        margin-top: 3em;
+        margin-bottom: 2.5em;
+
         .title2 {
           margin-top: 0.5em;
           margin-bottom: 0.2em;
-          font-size: 3em;
+          font-size: 2em;
         }
 
         .subtitle2 {
@@ -64,18 +58,21 @@
       }
 
       .products {
+        margin-bottom: 2em;
 
         .boxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 0.3em;
-    
-          .box1-cover, .box2-cover, .box3-cover {
-            @include sizes (80%, 3.5em);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 0.3em;
+
+          .box1-cover,
+          .box2-cover,
+          .box3-cover {
+            @include sizes(80%, 3.5em);
             margin-bottom: 0.5em;
             margin-right: 0;
-        
+
             .product {
               font-size: 0.8em;
               padding: 0;
@@ -85,23 +82,359 @@
       }
 
       .footerIndex {
-    
         p {
           margin: 0;
-          font-size: 0.7em;
-          width: 65%;
+          font-size: 0.6em;
+          width: 100%;
+          letter-spacing: 0.2em;
         }
       }
+    }
+
+    .banner {
+      .logo {
+        @include sizes(6em, 2em);
+      }
+
+      .slogan {
+        font-size: 0.6em;
+      }
+    }
+
+    .nav2 {
+      .menu2 {
+        justify-content: center;
+
+        .navigationMenu2 {
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+    .usContainer {
+      text-align: center;
+      height: 24em;
+
+      .us-title {
+        font-size: 2em;
+        width: 50%;
+        margin: auto;
+      }
+
+      .us-text {
+        font-size: 0.8em;
+        @include base-module;
+        width: 90%;
+        line-height: 1.3em;
+        margin: auto;
+        margin-top: 0.5em;
+      }
+
+      .social-media {
+        @include sizes(1em, 1em);
+        margin-top: 0.5em;
+      }
+
+      .wa {
+        margin-right: 0;
+      }
+    }
+
+    .map {
+      background-size: contain;
+      height: 10em;
+      margin-top: 1em;
+
+      .plane {
+        @include sizes(3em, 0.5em);
+        left: 20%;
+        top: 80%;
+      }
+
+      @keyframes planeMovement {
+        0% {
+          left: 20%;
+          top: 80%;
+        }
+        20% {
+          left: 44%;
+          top: 35%;
+        }
+        40% {
+          left: 55%;
+          top: 47%;
+        }
+        60% {
+          left: 68%;
+          top: 45%;
+        }
+        80% {
+          left: 15%;
+          top: 42%;
+        }
+        100% {
+          left: 20%;
+          top: 80%;
+        }
+      }
+
+      .whiteLogo {
+        left: 35%;
+        @include sizes(6em, 2.5em);
+      }
+    }
+
+    footer {
+      font-size: 0.7em;
+    }
+
+    .cover {
+      @include sizes(100%, 4em);
+
+      .titlePro {
+        font-size: 1.5em;
+        @include sizes(69%, 30%);
+      }
+    }
+
+    .productsContainer {
+      display: block;
+      height: 22em;
+
+      div {
+        a {
+          img {
+            @include sizes(100%, 10em);
+          }
+        }
+
+        .rep {
+          font-size: 1.4em;
+          margin-top: 0.5em;
+        }
+
+        .maquinas {
+          font-size: 1em;
+          margin-top: 0em;
+          margin-bottom: 0.3em;
+        }
+
+        .rightP {
+          font-size: 0.8em;
+          width: 90%;
+          margin-top: 0em;
+        }
+
+        .lubricantes {
+          font-size: 1.4em;
+          margin-top: 1em;
+        }
+
+        .leftP {
+          font-size: 0.8em;
+          width: 70%;
+        }
+      }
+    }
+
+    .productsContainer2 {
+      display: block;
+      height: 18em;
+
+      div {
+        a {
+          img {
+            @include sizes(100%, 10em);
+          }
+        }
+      }
+
+      .rightP {
+        font-size: 0.8em;
+        width: 90%;
+        margin-top: 0em;
+        margin-bottom: 1em;
+      }
+
+      .accesorios {
+        font-size: 1.4em;
+        margin-top: 1em;
+      }
+    }
+
+    .trademarksTable {
+      margin-top: 0em;
+      @include flex;
+
+      .cellWidth {
+        width: 50%;
+
+        img {
+          @include sizes(8em, 4em);
+        }
+      }
+
+      .videoWidth {
+        width: 100%;
+
+        .trademarksVideo {
+          width: 75%;
+        }
+      }
+    }
+
+    .quotesContainer {
+      @include sizes(100%, 40em);
+
+      form {
+        width: 90%;
+
+        .form {
+          width: 100%;
+
+          .quotes {
+            font-size: 1.3em;
+            padding-top: 0.7em;
+            text-align: center;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5em;
+          }
+
+          .quotesSub {
+            font-size: 1em;
+            padding: 0;
+          }
+
+          .group {
+            margin: 1em 3.6em;
+
+            input,
+            textarea {
+              font-size: 0.7em;
+            }
+
+            input:focus ~ label,
+            input:valid ~ label,
+            textarea:focus ~ label,
+            textarea:valid ~ label {
+              top: -0.4em;
+              font-size: 0.6em;
+            }
+
+            label {
+              font-size: 0.7em;
+            }
+          }
+
+          .buttonContact {
+            font-size: 0.7em;
+            margin-bottom: 2.5em;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 60%;
+
+        .textContact {
+          font-size: 1.3em;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    .cover {
+      @include sizes(100%, 4em);
+
+      .titleParts {
+        font-size: 1.5em;
+        @include sizes(68%, 30%);
+      }
+    }
+
+    .coverAcc {
+      @include sizes(100%, 4em);
+
+      .titleAcc {
+        font-size: 1.5em;
+        @include sizes(75%, 30%);
+      }
+    }
+
+    .parts {
+      .coverOils {
+        @include sizes(100%, 4em);
+
+        .titleOils {
+          font-size: 1.5em;
+          @include sizes(83%, 31%);
+        }
+      }
+
+      .oils {
+        width: 80%;
+        margin-top: 1em;
+
+        p {
+          font-size: 0.8em;
+          line-height: 1.4em;
+        }
+
+        .oilsSub,
+        .oilsSub2 {
+          font-size: 1em;
+          text-align: center;
+          margin: auto;
+          line-height: 1.2em;
+          margin-top: 0.5em;
+        }
+
+        .oilsSub {
+          width: 75%;
+        }
+
+        .oilsSub2 {
+          width: 90%;
+        }
+
+        .imgOils {
+          @include sizes(100%, 10em);
+        }
+
+        .fontSize {
+          font-size: 0.9em;
+        }
+
+        h3 {
+          font-size: 0.6em;
+        }
+      }
+    }
+
+    .data {
+      font-size: 0.8em;
+      margin-top: 2em;
+    }
+
+    .fingerDown {
+      @include sizes(1.5em, 1.5em);
+    }
+
+    #buttonParts,
+    #buttonParts2 {
+      font-size: 0.8em;
     }
   }
 }
 
+/*(min-width: 401px) and (max-width: 576px)*/
 @media (min-width: 401px) and (max-width: 576px) {
   body {
-
     .indexContainer {
       grid-template-columns: 100%;
-      grid-template-rows: 6em 12em 7em 10em 16em 6em;
+      grid-template-rows: 6em 6em 6em 12em 15em 6em;
       grid-template-areas:
         "banner"
         "presentation"
@@ -109,49 +442,45 @@
         "offer"
         "products"
         "footer";
-    
+
       nav {
         @include flex;
-        @include sizes (98%, 5em);
-    
+        @include sizes(90%, 40%);
+        border-radius: 1em;
+
         .menu {
           @include flex;
-          @include sizes (100%, 2em);
-    
+          @include sizes(100%, 2em);
+
           a {
             font-size: 0.9em;
             align-self: center;
           }
         }
-      }  
+      }
 
       .presentation {
-        margin-top: 0;
-    
+        margin-top: 1.5em;
+
         .title {
           font-size: 1.4em;
           line-height: 1em;
-        }
 
-        .expertise {
-          margin-bottom: 1.5em;
-        }
-
-        .buttonIndex {
-          font-size: 0.8em;
-          padding: 0.5em 1em;
-          margin-bottom: 2em;
-          border-radius: 1em;
+          .title1 {
+            font-size: 1.5em;
+          }
         }
       }
-    
+
       .offer {
-        height: 8em;
-    
+        height: 7em;
+        margin-top: 3em;
+        margin-bottom: 0.5em;
+
         .title2 {
           margin-top: 0.5em;
           margin-bottom: 0.2em;
-          font-size: 3em;
+          font-size: 2em;
         }
 
         .subtitle2 {
@@ -160,18 +489,21 @@
       }
 
       .products {
+        margin-bottom: 2em;
 
         .boxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 0.3em;
-    
-          .box1-cover, .box2-cover, .box3-cover {
-            @include sizes (80%, 4.5em);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 0.3em;
+
+          .box1-cover,
+          .box2-cover,
+          .box3-cover {
+            @include sizes(80%, 3.5em);
             margin-bottom: 0.5em;
             margin-right: 0;
-        
+
             .product {
               font-size: 0.8em;
               padding: 0;
@@ -181,73 +513,1461 @@
       }
 
       .footerIndex {
-    
         p {
           margin: 0;
           font-size: 0.7em;
           width: 100%;
+          letter-spacing: 0.2em;
         }
       }
     }
+
+    .banner {
+      .logo {
+        @include sizes(7em, 2.5em);
+      }
+
+      .slogan {
+        font-size: 0.7em;
+      }
+    }
+
+    .nav2 {
+      .menu2 {
+        justify-content: center;
+
+        .navigationMenu2 {
+          width: 30%;
+
+          a {
+            font-size: 0.8em;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .usContainer {
+      text-align: center;
+      height: 17em;
+
+      .us-title {
+        font-size: 2em;
+        width: 50%;
+        margin: auto;
+      }
+
+      .us-text {
+        font-size: 0.8em;
+        @include base-module;
+        width: 90%;
+        line-height: 1.4em;
+        margin: auto;
+        margin-top: 1em;
+      }
+
+      .social-media {
+        @include sizes(1em, 1em);
+        margin-top: 0.5em;
+      }
+
+      .wa {
+        margin-right: 0;
+      }
+    }
+
+    .map {
+      background-size: contain;
+      height: 17em;
+      margin-top: 1em;
+
+      .plane {
+        @include sizes(4em, 1em);
+        left: 20%;
+        top: 80%;
+      }
+
+      @keyframes planeMovement {
+        0% {
+          left: 20%;
+          top: 80%;
+        }
+        20% {
+          left: 44%;
+          top: 35%;
+        }
+        40% {
+          left: 55%;
+          top: 47%;
+        }
+        60% {
+          left: 68%;
+          top: 45%;
+        }
+        80% {
+          left: 15%;
+          top: 42%;
+        }
+        100% {
+          left: 20%;
+          top: 80%;
+        }
+      }
+
+      .whiteLogo {
+        left: 42%;
+        @include sizes(6em, 2.5em);
+      }
+    }
+
+    footer {
+      font-size: 0.8em;
+    }
+
+    .cover {
+      @include sizes(100%, 4em);
+
+      .titlePro {
+        font-size: 2em;
+        @include sizes(58%, 40%);
+      }
+    }
+
+    .productsContainer {
+      display: block;
+      height: 24em;
+
+      div {
+        a {
+          img {
+            @include sizes(100%, 13em);
+          }
+        }
+
+        .rep {
+          font-size: 1.8em;
+          margin-top: 1em;
+        }
+
+        .maquinas {
+          font-size: 1.2em;
+          margin-top: 0em;
+          margin-bottom: 0.3em;
+        }
+
+        .rightP {
+          font-size: 0.9em;
+          width: 90%;
+        }
+
+        .lubricantes {
+          font-size: 1.4em;
+          margin-top: 1em;
+        }
+
+        .leftP {
+          font-size: 0.9em;
+          width: 70%;
+        }
+      }
+    }
+
+    .productsContainer2 {
+      display: block;
+      height: 19em;
+
+      div {
+        a {
+          img {
+            @include sizes(100%, 12em);
+          }
+        }
+      }
+
+      .rightP {
+        font-size: 0.9em;
+        width: 90%;
+        margin-bottom: 1em;
+      }
+
+      .accesorios {
+        font-size: 1.4em;
+        margin-top: 1em;
+      }
+    }
+
+    .trademarksTable {
+      margin-top: 0em;
+      @include flex;
+
+      .cellWidth {
+        width: 50%;
+
+        img {
+          @include sizes(9em, 5em);
+        }
+      }
+
+      .videoWidth {
+        width: 100%;
+
+        .trademarksVideo {
+          width: 75%;
+        }
+      }
+    }
+
+    .quotesContainer {
+      @include sizes(100%, 38em);
+
+      form {
+        width: 80%;
+
+        .form {
+          width: 100%;
+
+          .quotes {
+            font-size: 2em;
+          }
+
+          .quotesSub {
+            font-size: 1.1em;
+          }
+
+          .group {
+            margin: 1em 4.6em;
+
+            input,
+            textarea {
+              font-size: 0.8em;
+            }
+
+            input:focus ~ label,
+            input:valid ~ label,
+            textarea:focus ~ label,
+            textarea:valid ~ label {
+              top: -0.5em;
+              font-size: 0.8em;
+            }
+
+            label {
+              font-size: 0.8em;
+            }
+          }
+
+          .buttonContact {
+            font-size: 0.8em;
+            margin-bottom: 2.5em;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 60%;
+
+        .textContact {
+          font-size: 1.3em;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    .cover {
+      @include sizes(100%, 5em);
+
+      .titleParts {
+        font-size: 2.5em;
+        @include sizes(72%, 52%);
+      }
+    }
+
+    .coverAcc {
+      @include sizes(100%, 5em);
+
+      .titleAcc {
+        font-size: 2.5em;
+        @include sizes(80%, 40%);
+      }
+    }
+
+    .parts {
+      .coverOils {
+        @include sizes(100%, 5em);
+
+        .titleOils {
+          font-size: 2.5em;
+          @include sizes(88.5%, 41%);
+        }
+      }
+
+      .oils {
+        width: 80%;
+        margin-top: 1em;
+
+        p {
+          font-size: 0.9em;
+          line-height: 1.4em;
+        }
+
+        .oilsSub,
+        .oilsSub2 {
+          font-size: 1.2em;
+          text-align: center;
+        }
+
+        .oilsSub {
+          width: 52%;
+        }
+
+        .oilsSub2 {
+          width: 90%;
+        }
+
+        .imgOils {
+          @include sizes(100%, 11em);
+        }
+
+        .fontSize {
+          font-size: 1em;
+        }
+
+        h3 {
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    .data {
+      font-size: 0.9em;
+      margin-top: 2em;
+    }
+
+    .fingerDown {
+      @include sizes(1.8em, 1.8em);
+    }
+
+    #buttonParts,
+    #buttonParts2 {
+      font-size: 0.9em;
+    }
   }
 }
-  
+
+/*(min-width: 577px) and (max-width: 768px)*/
 @media (min-width: 577px) and (max-width: 768px) {
   body {
-
     .indexContainer {
-      grid-template-rows: 6em 15em 14em 12em 6em;
-    
+      grid-template-rows: 6em 10em 6em 16em 14em 6em;
+
       .title {
-        font-size: 1.5em;
+        font-size: 1.7em;
       }
-    
+
       .title2 {
         font-size: 4em;
       }
-    
+
       .offer {
-        height: 10em;
+        height: 9em;
+        margin-top: 3em;
 
         .title2 {
           font-size: 3em;
         }
-      }
-    
-      .box1, .box2, .box3 {
-        height: 8em;
-    
-        .product {
-          font-size: 1em;
+
+        .subtitle2 {
+          font-size: 1.2em;
         }
       }
-    
+
+      nav {
+        @include flex;
+        @include sizes(80%, 70%);
+        border-radius: 1em;
+
+        .menu {
+          @include flex;
+          @include sizes(100%, 2em);
+
+          a {
+            font-size: 1em;
+            align-self: center;
+          }
+        }
+      }
+
+      .products {
+        margin-bottom: 2em;
+
+        .boxes {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 0.3em;
+
+          .box1-cover,
+          .box2-cover,
+          .box3-cover {
+            @include sizes(60%, 3.5em);
+            margin-bottom: 0.5em;
+            margin-right: 0;
+
+            .product {
+              font-size: 0.9em;
+              padding: 0;
+            }
+          }
+        }
+      }
+
       .footerIndex p {
         font-size: 0.9em;
       }
     }
-  }
-}
-  
-@media (min-width: 769px) and (max-width: 992px) {
-  body {
 
-    .indexContainer {
-      grid-template-rows: 6em 17em 14em 13em 7em;
-    
-      .offer {
-        height: 11em;
+    .banner {
+      .logo {
+        @include sizes(7.5em, 3em);
+      }
+
+      .slogan {
+        font-size: 0.7em;
       }
     }
-  }
-}
-  
-@media (min-width: 993px) and (max-width: 1200px) {
-  body {
 
-    .indexContainer {
-      grid-template-rows: 6em 16em 14em 13em 7em;
+    .nav2 {
+      .menu2 {
+        justify-content: center;
+
+        .navigationMenu2 {
+          width: 30%;
+
+          a {
+            font-size: 0.9em;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .usContainer {
+      text-align: center;
+      height: 15em;
+
+      .us-title {
+        font-size: 2em;
+        width: 50%;
+        margin: auto;
+      }
+
+      .us-text {
+        font-size: 0.8em;
+        @include base-module;
+        width: 90%;
+        line-height: 1.4em;
+        margin: auto;
+        margin-top: 1em;
+      }
+
+      .social-media {
+        @include sizes(1.5em, 1.5em);
+        margin-top: 0.5em;
+      }
+
+      .wa {
+        margin-right: 0;
+      }
+    }
+
+    .map {
+      background-size: contain;
+      height: 17em;
+      margin-top: 1em;
+
+      .plane {
+        @include sizes(4em, 1em);
+        left: 20%;
+        top: 83%;
+      }
+
+      @keyframes planeMovement {
+        0% {
+          left: 20%;
+          top: 83%;
+        }
+        20% {
+          left: 35%;
+          top: 35%;
+        }
+        40% {
+          left: 45%;
+          top: 47%;
+        }
+        60% {
+          left: 55%;
+          top: 45%;
+        }
+        80% {
+          left: 10%;
+          top: 42%;
+        }
+        100% {
+          left: 20%;
+          top: 83%;
+        }
+      }
+
+      .whiteLogo {
+        left: 43%;
+        @include sizes(6em, 2.5em);
+      }
+    }
+
+    footer {
+      font-size: 0.8em;
+    }
+
+    .cover {
+      @include sizes(100%, 5em);
+
+      .titlePro {
+        font-size: 2.5em;
+        @include sizes(56%, 40%);
+      }
+    }
+
+    .productsContainer {
+      display: block;
+      height: 27em;
+
+      div {
+        a {
+          img {
+            @include sizes(100%, 15em);
+          }
+        }
+
+        .rep {
+          font-size: 2.5em;
+          margin-top: 1em;
+        }
+
+        .maquinas {
+          font-size: 1.5em;
+          margin-top: 0.2em;
+          margin-bottom: 0.3em;
+        }
+
+        .rightP {
+          font-size: 1em;
+          width: 90%;
+        }
+
+        .lubricantes {
+          font-size: 2.5em;
+          margin-top: 1em;
+        }
+
+        .leftP {
+          font-size: 1em;
+          width: 70%;
+        }
+      }
+    }
+
+    .productsContainer2 {
+      display: block;
+      height: 24em;
+
+      div {
+        a {
+          img {
+            @include sizes(100%, 15em);
+          }
+        }
+      }
+
+      .rightP {
+        font-size: 1em;
+        width: 90%;
+        margin-bottom: 1em;
+      }
+
+      .accesorios {
+        font-size: 2.5em;
+        margin-top: 1em;
+      }
+    }
+
+    .trademarksTable {
+      margin-top: 0em;
+      @include flex;
+
+      .cellWidth {
+        width: 30%;
+
+        img {
+          @include sizes(10em, 6em);
+        }
+      }
+
+      .videoWidth {
+        width: 100%;
+
+        .trademarksVideo {
+          width: 75%;
+        }
+      }
+    }
+
+    .quotesContainer {
+      @include sizes(100%, 42em);
+
+      form {
+        width: 60%;
+
+        .form {
+          width: 100%;
+
+          .quotes {
+            font-size: 2.5em;
+          }
+
+          .quotesSub {
+            font-size: 1.2em;
+          }
+
+          .group {
+            margin: 1em 4.6em;
+
+            input,
+            textarea {
+              font-size: 0.9em;
+            }
+
+            input:focus ~ label,
+            input:valid ~ label,
+            textarea:focus ~ label,
+            textarea:valid ~ label {
+              top: -0.6em;
+              font-size: 0.9em;
+            }
+
+            label {
+              font-size: 0.9em;
+            }
+          }
+
+          .buttonContact {
+            font-size: 0.9em;
+            margin-bottom: 2.5em;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 50%;
+
+        .textContact {
+          font-size: 1.3em;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    .cover {
+      @include sizes(100%, 5.5em);
+
+      .titleParts {
+        font-size: 3em;
+        @include sizes(62%, 52%);
+      }
+    }
+
+    .coverAcc {
+      @include sizes(100%, 5.5em);
+
+      .titleAcc {
+        font-size: 3em;
+        @include sizes(68.5%, 45%);
+      }
+    }
+
+    .parts {
+      .coverOils {
+        @include sizes(100%, 5.5em);
+
+        .titleOils {
+          font-size: 3em;
+          @include sizes(76%, 45%);
+        }
+      }
+
+      .oils {
+        width: 80%;
+        margin-top: 1em;
+
+        p {
+          font-size: 1em;
+          line-height: 1.4em;
+        }
+
+        .oilsSub,
+        .oilsSub2 {
+          font-size: 1.4em;
+          margin-top: 1em;
+          text-align: center;
+        }
+
+        .oilsSub {
+          width: 43%;
+        }
+
+        .oilsSub2 {
+          width: 79%;
+        }
+
+        .imgOils {
+          @include sizes(100%, 12em);
+        }
+
+        .fontSize {
+          font-size: 1.1em;
+        }
+
+        h3 {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .data {
+      font-size: 1em;
+      margin-top: 2em;
+    }
+
+    .fingerDown {
+      @include sizes(2em, 2em);
+    }
+
+    #buttonParts,
+    #buttonParts2 {
+      font-size: 1em;
     }
   }
 }
-/*Index responsive*/
+
+/*(min-width: 769px) and (max-width: 992px)*/
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    .indexContainer {
+      grid-template-rows: 6em 10em 6em 16em 10em 6em;
+
+      .title {
+        font-size: 1.7em;
+      }
+
+      .title2 {
+        font-size: 4em;
+      }
+
+      .offer {
+        height: 8em;
+        margin-top: 3em;
+
+        .title2 {
+          font-size: 3em;
+        }
+
+        .subtitle2 {
+          font-size: 1.3em;
+        }
+      }
+
+      nav {
+        @include flex;
+        @include sizes(70%, 70%);
+        border-radius: 1em;
+
+        .menu {
+          @include flex;
+          @include sizes(100%, 2em);
+
+          a {
+            font-size: 1em;
+            align-self: center;
+          }
+        }
+      }
+
+      .products {
+        margin-bottom: 2em;
+
+        .box1-cover,
+        .box2-cover,
+        .box3-cover {
+          @include sizes(30%, 7em);
+          margin-right: 1em;
+          display: flex;
+          margin: auto;
+
+          .product {
+            font-size: 1em;
+            padding: 0;
+          }
+        }
+      }
+
+      .footerIndex p {
+        font-size: 0.9em;
+      }
+    }
+
+    .banner {
+      .logo {
+        @include sizes(8em, 3em);
+      }
+
+      .slogan {
+        font-size: 0.8em;
+      }
+    }
+
+    .nav2 {
+      .menu2 {
+        .navigationMenu2 {
+          a {
+            font-size: 0.9em;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .usContainer {
+      height: 36em;
+
+      .us-title {
+        font-size: 5em;
+      }
+
+      .us-text {
+        font-size: 1em;
+        margin-left: 16em;
+      }
+
+      .social-media {
+        @include sizes(2em, 2em);
+      }
+
+      .wa {
+        margin-right: 7em;
+      }
+    }
+
+    .map {
+      background-size: cover;
+      height: 30em;
+      margin-top: 1em;
+
+      .plane {
+        @include sizes(6em, 2em);
+        left: 27%;
+        top: 83%;
+      }
+
+      @keyframes planeMovement {
+        0% {
+          left: 27%;
+          top: 83%;
+        }
+        20% {
+          left: 44%;
+          top: 35%;
+        }
+        40% {
+          left: 55%;
+          top: 47%;
+        }
+        60% {
+          left: 68%;
+          top: 45%;
+        }
+        80% {
+          left: 15%;
+          top: 42%;
+        }
+        100% {
+          left: 27%;
+          top: 83%;
+        }
+      }
+
+      .whiteLogo {
+        left: 46%;
+        @include sizes(6.5em, 2.5em);
+      }
+    }
+
+    footer {
+      font-size: 0.9em;
+    }
+
+    .cover {
+      @include sizes(100%, 5em);
+
+      .titlePro {
+        font-size: 3em;
+        @include sizes(54.1%, 55%);
+      }
+    }
+
+    .productsContainer,
+    .productsContainer2 {
+      @include sizes(100%, 20em);
+
+      div {
+        .rep {
+          font-size: 3em;
+          margin: 0;
+          margin-right: 0.7em;
+        }
+
+        .maquinas {
+          font-size: 2em;
+        }
+
+        .rightP {
+          font-size: 1.1em;
+          margin-top: 0.3em;
+        }
+
+        .lubricantes {
+          font-size: 3em;
+        }
+
+        .leftP {
+          font-size: 1.1em;
+        }
+
+        .accesorios {
+          font-size: 3em;
+        }
+      }
+    }
+
+    .trademarksTable {
+      margin-top: 0em;
+      @include flex;
+
+      .cellWidth {
+        width: 30%;
+
+        img {
+          @include sizes(11em, 6.5em);
+        }
+      }
+
+      .videoWidth {
+        width: 100%;
+
+        .trademarksVideo {
+          width: 75%;
+        }
+      }
+    }
+
+    .quotesContainer {
+      @include sizes(100%, 42em);
+
+      form {
+        width: 50%;
+
+        .form {
+          width: 100%;
+
+          .quotes {
+            font-size: 3em;
+          }
+
+          .quotesSub {
+            font-size: 1.3em;
+          }
+
+          .group {
+            margin: 1em 4.6em;
+
+            input,
+            textarea {
+              font-size: 1em;
+            }
+
+            input:focus ~ label,
+            input:valid ~ label,
+            textarea:focus ~ label,
+            textarea:valid ~ label {
+              top: -0.7em;
+              font-size: 1em;
+            }
+
+            label {
+              font-size: 1em;
+            }
+          }
+
+          .buttonContact {
+            font-size: 1em;
+            margin-bottom: 2.5em;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 40%;
+
+        .textContact {
+          font-size: 2.5em;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    .cover {
+      @include sizes(100%, 6.5em);
+
+      .titleParts {
+        font-size: 3.5em;
+        @include sizes(56%, 52%);
+      }
+    }
+
+    .coverAcc {
+      @include sizes(100%, 6.5em);
+
+      .titleAcc {
+        font-size: 3.5em;
+        @include sizes(62%, 41%);
+      }
+    }
+
+    .parts {
+      .coverOils {
+        @include sizes(100%, 6.5em);
+
+        .titleOils {
+          font-size: 3.5em;
+          @include sizes(69%, 44%);
+        }
+      }
+
+      .oils {
+        width: 80%;
+        margin-top: 1em;
+
+        p {
+          font-size: 1.1em;
+          line-height: 1.4em;
+        }
+
+        .oilsSub,
+        .oilsSub2 {
+          font-size: 1.6em;
+          text-align: center;
+        }
+
+        .oilsSub {
+          width: 37%;
+        }
+
+        .oilsSub2 {
+          width: 68%;
+        }
+
+        .imgOils {
+          @include sizes(100%, 16em);
+        }
+
+        .fontSize {
+          font-size: 1.2em;
+        }
+
+        h3 {
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    .data {
+      font-size: 1.1em;
+      margin-top: 2em;
+    }
+
+    .fingerDown {
+      @include sizes(2.2em, 2.2em);
+    }
+
+    #buttonParts,
+    #buttonParts2 {
+      font-size: 1.1em;
+    }
+  }
+}
+
+/*(min-width: 993px) and (max-width: 1200px)*/
+@media (min-width: 993px) and (max-width: 1200px) {
+  body {
+    .indexContainer {
+      grid-template-rows: 6em 10em 6em 16em 10em 6em;
+
+      .title {
+        font-size: 2em;
+      }
+
+      .title2 {
+        font-size: 4em;
+      }
+
+      .offer {
+        height: 8em;
+        margin-top: 3em;
+
+        .title2 {
+          font-size: 3em;
+        }
+
+        .subtitle2 {
+          font-size: 1.4em;
+        }
+      }
+
+      nav {
+        @include flex;
+        @include sizes(70%, 70%);
+        border-radius: 1em;
+
+        .menu {
+          @include flex;
+          @include sizes(100%, 2em);
+
+          a {
+            font-size: 1.2em;
+            align-self: center;
+          }
+        }
+      }
+
+      .products {
+        margin-bottom: 2em;
+
+        .box1-cover,
+        .box2-cover,
+        .box3-cover {
+          @include sizes(30%, 7em);
+          margin-right: 1em;
+          display: flex;
+          margin: auto;
+
+          .product {
+            font-size: 1.1em;
+            padding: 0;
+          }
+        }
+      }
+
+      .footerIndex p {
+        font-size: 0.9em;
+      }
+    }
+
+    .banner {
+      .logo {
+        @include sizes(8.5em, 3.2em);
+      }
+
+      .slogan {
+        font-size: 0.8em;
+      }
+    }
+
+    .nav2 {
+      .menu2 {
+        .navigationMenu2 {
+          a {
+            font-size: 0.9em;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .usContainer {
+      height: 36em;
+
+      .us-title {
+        font-size: 6.5em;
+        padding-top: 0.5em;
+        margin-left: 4.7em;
+      }
+
+      .us-text {
+        font-size: 1em;
+        margin-left: 26.5em;
+        width: 55%;
+      }
+
+      .social-media {
+        @include sizes(2.5em, 2.5em);
+      }
+
+      .wa {
+        margin-right: 12.5em;
+      }
+    }
+
+    .map {
+      background-size: cover;
+      height: 42em;
+      margin-top: 1em;
+
+      .plane {
+        @include sizes(6em, 2em);
+        left: 27%;
+        top: 83%;
+      }
+
+      @keyframes planeMovement {
+        0% {
+          left: 27%;
+          top: 83%;
+        }
+        20% {
+          left: 47%;
+          top: 35%;
+        }
+        40% {
+          left: 55%;
+          top: 47%;
+        }
+        60% {
+          left: 68%;
+          top: 45%;
+        }
+        80% {
+          left: 15%;
+          top: 42%;
+        }
+        100% {
+          left: 27%;
+          top: 83%;
+        }
+      }
+
+      .whiteLogo {
+        left: 46%;
+        @include sizes(7em, 3em);
+      }
+    }
+
+    footer {
+      font-size: 1.1em;
+    }
+
+    .cover {
+      @include sizes(100%, 8em);
+
+      .titlePro {
+        font-size: 4em;
+        @include sizes(53%, 47%);
+      }
+    }
+
+    .productsContainer,
+    .productsContainer2 {
+      @include sizes(100%, 23em);
+
+      div {
+        .rep {
+          font-size: 3.5em;
+        }
+
+        .maquinas {
+          font-size: 2.4em;
+        }
+
+        .rightP {
+          font-size: 1.2em;
+          margin-top: 0.3em;
+        }
+
+        .lubricantes {
+          font-size: 3em;
+        }
+
+        .leftP {
+          font-size: 1.2em;
+        }
+
+        .accesorios {
+          font-size: 3.5em;
+        }
+      }
+    }
+
+    .trademarksTable {
+      margin-top: 0em;
+      @include flex;
+
+      .cellWidth {
+        width: 30%;
+
+        img {
+          @include sizes(12em, 7em);
+        }
+      }
+
+      .videoWidth {
+        width: 100%;
+
+        .trademarksVideo {
+          width: 50%;
+        }
+      }
+    }
+
+    .quotesContainer {
+      @include sizes(100%, 45em);
+
+      form {
+        width: 50%;
+
+        .form {
+          width: 100%;
+
+          .quotes {
+            font-size: 3.5em;
+          }
+
+          .quotesSub {
+            font-size: 1.4em;
+          }
+
+          .group {
+            margin: 1em 4.6em;
+
+            input,
+            textarea {
+              font-size: 1.1em;
+            }
+
+            input:focus ~ label,
+            input:valid ~ label,
+            textarea:focus ~ label,
+            textarea:valid ~ label {
+              top: -0.8em;
+              font-size: 1.1em;
+            }
+
+            label {
+              font-size: 1.1em;
+            }
+          }
+
+          .buttonContact {
+            font-size: 1.1em;
+            margin-bottom: 2.5em;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 40%;
+
+        .textContact {
+          font-size: 3em;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+
+    .cover {
+      @include sizes(100%, 8em);
+
+      .titleParts {
+        font-size: 4.2em;
+        @include sizes(55%, 56%);
+      }
+    }
+
+    .coverAcc {
+      @include sizes(100%, 8em);
+
+      .titleAcc {
+        font-size: 4.2em;
+        @include sizes(61%, 41.5%);
+      }
+    }
+
+    .parts {
+      .coverOils {
+        @include sizes(100%, 8em);
+
+        .titleOils {
+          font-size: 4.2em;
+          @include sizes(67.5%, 43%);
+        }
+      }
+
+      .oils {
+        width: 80%;
+        margin-top: 1em;
+
+        p {
+          font-size: 1.2em;
+          line-height: 1.4em;
+        }
+
+        .oilsSub,
+        .oilsSub2 {
+          font-size: 1.8em;
+          margin-bottom: 0.5em;
+          margin-top: 1em;
+          text-align: center;
+        }
+
+        .oilsSub {
+          width: 34%;
+        }
+
+        .oilsSub2 {
+          width: 62%;
+        }
+
+        .imgOils {
+          @include sizes(100%, 20em);
+        }
+
+        .fontSize {
+          font-size: 1.3em;
+        }
+
+        h3 {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .data {
+      font-size: 1.2em;
+      margin-top: 2em;
+    }
+
+    .fingerDown {
+      @include sizes(2.4em, 2.4em);
+    }
+
+    #buttonParts,
+    #buttonParts2 {
+      font-size: 1.2em;
+    }
+  }
+}

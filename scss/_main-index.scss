@@ -3,7 +3,7 @@ nav {
   background-color: $bc-gold;
   border-radius: 0.5em;
   margin: auto;
-  @include sizes (40%, 30%);
+  @include sizes (45%, 30%);
     
   .menu {
     display: flex;
