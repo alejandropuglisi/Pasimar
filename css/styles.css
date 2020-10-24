@@ -307,11 +307,8 @@ nav {
 .titlePro {
   font-size: 5em;
   letter-spacing: 0.7em;
-  background-color: rgba(184, 177, 177, 0.7);
   margin: 0;
-  line-height: 1;
-  height: 55%;
-  width: 54.1%; }
+  line-height: 1; }
 
 .productsContainer, .productsContainer2 {
   display: flex;
@@ -369,11 +366,8 @@ nav {
   .cover .titleParts {
     font-size: 5em;
     letter-spacing: 0.7em;
-    background-color: rgba(184, 177, 177, 0.7);
     margin: 0;
-    line-height: 1;
-    height: 55%;
-    width: 53.6%; }
+    line-height: 1; }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -404,11 +398,8 @@ nav {
     .parts .coverOils .titleOils {
       font-size: 5em;
       letter-spacing: 0.7em;
-      background-color: rgba(255, 255, 255, 0.7);
       margin: 0;
-      line-height: 1;
-      height: 46%;
-      width: 65.6%; }
+      line-height: 1; }
   .parts .oils {
     font-family: "Old Standard TT", serif;
     font-weight: 800;
@@ -455,11 +446,8 @@ nav {
   .coverAcc .titleAcc {
     font-size: 5em;
     letter-spacing: 0.7em;
-    background-color: rgba(184, 177, 177, 0.7);
     margin: 0;
-    line-height: 1;
-    height: 46%;
-    width: 59.2%; }
+    line-height: 1; }
 
 .data {
   font-family: "Old Standard TT", serif;
@@ -778,9 +766,7 @@ footer {
     height: 4em;
     width: 100%; }
     body .cover .titlePro {
-      font-size: 1.5em;
-      height: 30%;
-      width: 69%; }
+      font-size: 1.5em; }
   body .productsContainer {
     display: block;
     height: 22em; }
@@ -874,23 +860,17 @@ footer {
     height: 4em;
     width: 100%; }
     body .cover .titleParts {
-      font-size: 1.5em;
-      height: 30%;
-      width: 68%; }
+      font-size: 1.5em; }
   body .coverAcc {
     height: 4em;
     width: 100%; }
     body .coverAcc .titleAcc {
-      font-size: 1.5em;
-      height: 30%;
-      width: 75%; }
+      font-size: 1.5em; }
   body .parts .coverOils {
     height: 4em;
     width: 100%; }
     body .parts .coverOils .titleOils {
-      font-size: 1.5em;
-      height: 31%;
-      width: 83%; }
+      font-size: 1.5em; }
   body .parts .oils {
     width: 80%;
     margin-top: 1em; }
@@ -925,18 +905,288 @@ footer {
   body #buttonParts2 {
     font-size: 0.8em; } }
 
-/*(min-width: 401px) and (max-width: 576px)*/
-@media (min-width: 401px) and (max-width: 576px) {
+/*(min-width: 401px) and (max-width: 448px)*/
+@media (min-width: 401px) and (max-width: 448px) {
   body .indexContainer {
     grid-template-columns: 100%;
-    grid-template-rows: 6em 6em 6em 12em 15em 6em;
+    grid-template-rows: 6em 8em 5em 12em 15em 6em;
     grid-template-areas: "banner" "presentation" "nav" "offer" "products" "footer"; }
     body .indexContainer nav {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      height: 40%;
+      height: 70%;
+      width: 70%;
+      border-radius: 1em; }
+      body .indexContainer nav .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 3.5em;
+        width: 100%; }
+        body .indexContainer nav .menu a {
+          font-size: 0.9em;
+          align-self: center; }
+    body .indexContainer .presentation {
+      margin-top: 1.5em; }
+      body .indexContainer .presentation .title {
+        font-size: 1.4em;
+        line-height: 1em; }
+        body .indexContainer .presentation .title .title1 {
+          font-size: 1.5em; }
+    body .indexContainer .offer {
+      height: 7.5em;
+      margin-top: 3em;
+      margin-bottom: 0.5em; }
+      body .indexContainer .offer .title2 {
+        margin-top: 0.5em;
+        margin-bottom: 0.2em;
+        font-size: 2em; }
+      body .indexContainer .offer .subtitle2 {
+        font-size: 1.2em; }
+    body .indexContainer .products {
+      margin-bottom: 2em; }
+      body .indexContainer .products .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0.3em; }
+        body .indexContainer .products .boxes .box1-cover,
+        body .indexContainer .products .boxes .box2-cover,
+        body .indexContainer .products .boxes .box3-cover {
+          height: 3.5em;
+          width: 80%;
+          margin-bottom: 0.5em;
+          margin-right: 0; }
+          body .indexContainer .products .boxes .box1-cover .product,
+          body .indexContainer .products .boxes .box2-cover .product,
+          body .indexContainer .products .boxes .box3-cover .product {
+            font-size: 0.8em;
+            padding: 0; }
+    body .indexContainer .footerIndex p {
+      margin: 0;
+      font-size: 0.7em;
+      width: 100%;
+      letter-spacing: 0.2em; }
+  body .banner .logo {
+    height: 2.5em;
+    width: 7em; }
+  body .banner .slogan {
+    font-size: 0.7em; }
+  body .nav2 .menu2 {
+    justify-content: center; }
+    body .nav2 .menu2 .navigationMenu2 {
+      width: 30%; }
+      body .nav2 .menu2 .navigationMenu2 a {
+        font-size: 0.8em;
+        margin: auto; }
+  body .usContainer {
+    text-align: center;
+    height: 21em; }
+    body .usContainer .us-title {
+      font-size: 2em;
+      width: 50%;
+      margin: auto; }
+    body .usContainer .us-text {
+      font-size: 0.8em;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      width: 90%;
+      line-height: 1.4em;
+      margin: auto;
+      margin-top: 1em; }
+    body .usContainer .social-media {
+      height: 1em;
+      width: 1em;
+      margin-top: 0.5em; }
+    body .usContainer .wa {
+      margin-right: 0; }
+  body .map {
+    background-size: cover;
+    height: 16em;
+    width: 100%;
+    margin-top: 1em; }
+    body .map .plane {
+      height: 1em;
+      width: 4em;
+      left: 20%;
+      top: 80%; }
+  @keyframes planeMovement {
+    0% {
+      left: 20%;
+      top: 80%; }
+    20% {
+      left: 44%;
+      top: 35%; }
+    40% {
+      left: 55%;
+      top: 47%; }
+    60% {
+      left: 68%;
+      top: 45%; }
+    80% {
+      left: 15%;
+      top: 42%; }
+    100% {
+      left: 20%;
+      top: 80%; } }
+    body .map .whiteLogo {
+      left: 41%;
+      height: 2.5em;
+      width: 6em; }
+  body footer {
+    font-size: 0.8em; }
+  body .cover {
+    height: 4em;
+    width: 100%; }
+    body .cover .titlePro {
+      font-size: 1.8em;
+      height: 34%;
+      width: 63%; }
+  body .productsContainer {
+    display: block;
+    height: 25em; }
+    body .productsContainer div a img {
+      height: 13em;
+      width: 100%; }
+    body .productsContainer div .rep {
+      font-size: 1.8em;
+      margin-top: 1em; }
+    body .productsContainer div .maquinas {
+      font-size: 1.2em;
+      margin-top: 0em;
+      margin-bottom: 0.3em; }
+    body .productsContainer div .rightP {
+      font-size: 0.9em;
+      width: 90%; }
+    body .productsContainer div .lubricantes {
+      font-size: 1.4em;
+      margin-top: 1em; }
+    body .productsContainer div .leftP {
+      font-size: 0.9em;
+      width: 70%; }
+  body .productsContainer2 {
+    display: block;
+    height: 19em; }
+    body .productsContainer2 div a img {
+      height: 12em;
+      width: 100%; }
+    body .productsContainer2 .rightP {
+      font-size: 0.9em;
+      width: 90%;
+      margin-bottom: 1em; }
+    body .productsContainer2 .accesorios {
+      font-size: 1.4em;
+      margin-top: 1em; }
+  body .trademarksTable {
+    margin-top: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    body .trademarksTable .cellWidth {
+      width: 50%; }
+      body .trademarksTable .cellWidth img {
+        height: 5em;
+        width: 9em; }
+    body .trademarksTable .videoWidth {
+      width: 100%; }
+      body .trademarksTable .videoWidth .trademarksVideo {
+        width: 75%; }
+  body .quotesContainer {
+    height: 38em;
+    width: 100%; }
+    body .quotesContainer form {
+      width: 80%; }
+      body .quotesContainer form .form {
+        width: 100%; }
+        body .quotesContainer form .form .quotes {
+          font-size: 2em; }
+        body .quotesContainer form .form .quotesSub {
+          font-size: 1.1em; }
+        body .quotesContainer form .form .group {
+          margin: 1em 4em; }
+          body .quotesContainer form .form .group input,
+          body .quotesContainer form .form .group textarea {
+            font-size: 0.8em; }
+          body .quotesContainer form .form .group input:focus ~ label,
+          body .quotesContainer form .form .group input:valid ~ label,
+          body .quotesContainer form .form .group textarea:focus ~ label,
+          body .quotesContainer form .form .group textarea:valid ~ label {
+            top: -0.5em;
+            font-size: 0.8em; }
+          body .quotesContainer form .form .group label {
+            font-size: 0.8em; }
+        body .quotesContainer form .form .buttonContact {
+          font-size: 0.8em;
+          margin-bottom: 2.5em; }
+    body .quotesContainer .textContainer {
+      width: 60%; }
+      body .quotesContainer .textContainer .textContact {
+        font-size: 1.3em;
+        letter-spacing: 0.1em; }
+  body .cover {
+    height: 5em;
+    width: 100%; }
+    body .cover .titleParts {
+      font-size: 2em; }
+  body .coverAcc {
+    height: 5em;
+    width: 100%; }
+    body .coverAcc .titleAcc {
+      font-size: 2em; }
+  body .parts .coverOils {
+    height: 5em;
+    width: 100%; }
+    body .parts .coverOils .titleOils {
+      font-size: 2em;
+      letter-spacing: 0.4em; }
+  body .parts .oils {
+    width: 80%;
+    margin-top: 1em; }
+    body .parts .oils p {
+      font-size: 0.9em;
+      line-height: 1.4em; }
+    body .parts .oils .oilsSub,
+    body .parts .oils .oilsSub2 {
+      font-size: 1.1em;
+      text-align: center; }
+    body .parts .oils .oilsSub {
+      width: 60%; }
+    body .parts .oils .oilsSub2 {
+      width: 100%; }
+    body .parts .oils .imgOils {
+      height: 11em;
+      width: 100%; }
+    body .parts .oils .fontSize {
+      font-size: 1em; }
+    body .parts .oils h3 {
+      font-size: 0.7em; }
+  body .data {
+    font-size: 0.9em;
+    margin-top: 2em; }
+  body .fingerDown {
+    height: 1.8em;
+    width: 1.8em; }
+  body #buttonParts,
+  body #buttonParts2 {
+    font-size: 0.9em; } }
+
+/*(min-width: 449px) and (max-width: 576px)*/
+@media (min-width: 449px) and (max-width: 576px) {
+  body .indexContainer {
+    grid-template-columns: 100%;
+    grid-template-rows: 6em 8em 5em 12em 15em 6em;
+    grid-template-areas: "banner" "presentation" "nav" "offer" "products" "footer"; }
+    body .indexContainer nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 70%;
       width: 90%;
       border-radius: 1em; }
       body .indexContainer nav .menu {
@@ -944,7 +1194,7 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        height: 2em;
+        height: 3.5em;
         width: 100%; }
         body .indexContainer nav .menu a {
           font-size: 0.9em;
@@ -1004,7 +1254,8 @@ footer {
         margin: auto; }
   body .usContainer {
     text-align: center;
-    height: 17em; }
+    height: 45%;
+    padding-bottom: 2em; }
     body .usContainer .us-title {
       font-size: 2em;
       width: 50%;
@@ -1025,7 +1276,7 @@ footer {
     body .usContainer .wa {
       margin-right: 0; }
   body .map {
-    background-size: contain;
+    background-size: cover;
     height: 17em;
     margin-top: 1em; }
     body .map .plane {
@@ -1151,23 +1402,18 @@ footer {
     height: 5em;
     width: 100%; }
     body .cover .titleParts {
-      font-size: 2.5em;
-      height: 52%;
-      width: 72%; }
+      font-size: 2em; }
   body .coverAcc {
     height: 5em;
     width: 100%; }
     body .coverAcc .titleAcc {
-      font-size: 2.5em;
-      height: 40%;
-      width: 80%; }
+      font-size: 2em; }
   body .parts .coverOils {
     height: 5em;
     width: 100%; }
     body .parts .coverOils .titleOils {
-      font-size: 2.5em;
-      height: 41%;
-      width: 88.5%; }
+      font-size: 2em;
+      letter-spacing: 0.4em; }
   body .parts .oils {
     width: 80%;
     margin-top: 1em; }
@@ -1179,9 +1425,9 @@ footer {
       font-size: 1.2em;
       text-align: center; }
     body .parts .oils .oilsSub {
-      width: 52%; }
+      width: 54%; }
     body .parts .oils .oilsSub2 {
-      width: 90%; }
+      width: 99%; }
     body .parts .oils .imgOils {
       height: 11em;
       width: 100%; }
@@ -1198,6 +1444,51 @@ footer {
   body #buttonParts,
   body #buttonParts2 {
     font-size: 0.9em; } }
+
+/*(min-width: 494px) and (max-width: 576px)*/
+@media (min-width: 494px) and (max-width: 576px) {
+  body .map {
+    background-size: cover;
+    height: 19em;
+    margin-top: 1em; }
+    body .map .plane {
+      height: 1em;
+      width: 4em;
+      left: 25%;
+      top: 85%; }
+  @keyframes planeMovement {
+    0% {
+      left: 25%;
+      top: 85%; }
+    20% {
+      left: 48%;
+      top: 33%; }
+    40% {
+      left: 55%;
+      top: 47%; }
+    60% {
+      left: 68%;
+      top: 40%; }
+    80% {
+      left: 10%;
+      top: 42%; }
+    100% {
+      left: 25%;
+      top: 85%; } }
+    body .map .whiteLogo {
+      left: 44%;
+      height: 2.5em;
+      width: 6em; }
+  body .parts .coverOils {
+    height: 5em;
+    width: 100%; }
+    body .parts .coverOils .titleOils {
+      font-size: 2em;
+      letter-spacing: 0.4em; }
+  body .parts .oils .oilsSub {
+    width: 50%; }
+  body .parts .oils .oilsSub2 {
+    width: 91%; } }
 
 /*(min-width: 577px) and (max-width: 768px)*/
 @media (min-width: 577px) and (max-width: 768px) {
@@ -1414,23 +1705,17 @@ footer {
     height: 5.5em;
     width: 100%; }
     body .cover .titleParts {
-      font-size: 3em;
-      height: 52%;
-      width: 62%; }
+      font-size: 2.5em; }
   body .coverAcc {
     height: 5.5em;
     width: 100%; }
     body .coverAcc .titleAcc {
-      font-size: 3em;
-      height: 45%;
-      width: 68.5%; }
+      font-size: 2.5em; }
   body .parts .coverOils {
     height: 5.5em;
     width: 100%; }
     body .parts .coverOils .titleOils {
-      font-size: 3em;
-      height: 45%;
-      width: 76%; }
+      font-size: 2.5em; }
   body .parts .oils {
     width: 80%;
     margin-top: 1em; }
@@ -1443,9 +1728,9 @@ footer {
       margin-top: 1em;
       text-align: center; }
     body .parts .oils .oilsSub {
-      width: 43%; }
+      width: 50%; }
     body .parts .oils .oilsSub2 {
-      width: 79%; }
+      width: 95%; }
     body .parts .oils .imgOils {
       height: 12em;
       width: 100%; }
@@ -1650,23 +1935,17 @@ footer {
     height: 6.5em;
     width: 100%; }
     body .cover .titleParts {
-      font-size: 3.5em;
-      height: 52%;
-      width: 56%; }
+      font-size: 3.5em; }
   body .coverAcc {
     height: 6.5em;
     width: 100%; }
     body .coverAcc .titleAcc {
-      font-size: 3.5em;
-      height: 41%;
-      width: 62%; }
+      font-size: 3.5em; }
   body .parts .coverOils {
     height: 6.5em;
     width: 100%; }
     body .parts .coverOils .titleOils {
-      font-size: 3.5em;
-      height: 44%;
-      width: 69%; }
+      font-size: 3.5em; }
   body .parts .oils {
     width: 80%;
     margin-top: 1em; }
@@ -1678,9 +1957,9 @@ footer {
       font-size: 1.6em;
       text-align: center; }
     body .parts .oils .oilsSub {
-      width: 37%; }
+      width: 45%; }
     body .parts .oils .oilsSub2 {
-      width: 68%; }
+      width: 80%; }
     body .parts .oils .imgOils {
       height: 16em;
       width: 100%; }
@@ -1886,23 +2165,17 @@ footer {
     height: 8em;
     width: 100%; }
     body .cover .titleParts {
-      font-size: 4.2em;
-      height: 56%;
-      width: 55%; }
+      font-size: 4em; }
   body .coverAcc {
     height: 8em;
     width: 100%; }
     body .coverAcc .titleAcc {
-      font-size: 4.2em;
-      height: 41.5%;
-      width: 61%; }
+      font-size: 4em; }
   body .parts .coverOils {
     height: 8em;
     width: 100%; }
     body .parts .coverOils .titleOils {
-      font-size: 4.2em;
-      height: 43%;
-      width: 67.5%; }
+      font-size: 4em; }
   body .parts .oils {
     width: 80%;
     margin-top: 1em; }
@@ -1916,9 +2189,9 @@ footer {
       margin-top: 1em;
       text-align: center; }
     body .parts .oils .oilsSub {
-      width: 34%; }
+      width: 42%; }
     body .parts .oils .oilsSub2 {
-      width: 62%; }
+      width: 72%; }
     body .parts .oils .imgOils {
       height: 20em;
       width: 100%; }
