@@ -14,7 +14,7 @@
 
       nav {
         @include flex;
-        @include sizes(65%, 65%);
+        @include sizes(68%, 75%);
         border-radius: 1em;
 
         .menu {

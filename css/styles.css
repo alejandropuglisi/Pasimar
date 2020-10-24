@@ -655,8 +655,8 @@ footer {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      height: 65%;
-      width: 65%;
+      height: 75%;
+      width: 68%;
       border-radius: 1em; }
       body .indexContainer nav .menu {
         display: flex;
